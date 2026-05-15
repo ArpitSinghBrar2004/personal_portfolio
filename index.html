@@ -11,101 +11,110 @@
 />
 </head>
 <body>
-    <div id="nav">
-        <div class="left"><i class="ri-home-gear-fill"></i>Home </div>
-        <div class="center"><i class="ri-info-card-fill"></i>About Me</div>
-        <div class="right">
-        <span><i class="ri-file-list-fill"></i>My Work</span>
-        <a href="#contact"><button> Contact Me</button></a>
+  <div id="nav">
+    <a href="#main" class="left"><i class="ri-home-gear-fill"></i> Home</a>
+    <a href="#about" class="center"><i class="ri-info-card-fill"></i> About Me</a>
+    <div class="right">
+      <a href="#projects"><i class="ri-file-list-fill"></i> My Work</a>
+      <a href="#contact"><button>Contact Me</button></a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <h1>Hi, I am <span>Arpit Singh Brar</span></h1>
+      <p class="subtitle">Building CoreRex • Automation Tools • FiveM Scripts • AI Assistants</p>
+      <a href="#about" class="scroll-btn">↓ SCROLL DOWN</a>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+          I’m Arpit Singh, a self-taught developer focused on backend systems,
+          automation tools, AI assistants and multiplayer game scripting.
+          Currently building CoreRex — a platform for Discord tools, FiveM scripts
+          and digital systems.
+        </p>
+      </div>
+    </section>
+
+    <section class="terminal reveal">
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
         </div>
-  </div>
-  <div id="main">
-    <div class="hero">
-  <h1>Hi I am <span>Arpit Singh Brar</span></h1>
-  <p class="subtitle">Frontend Developer • UI Designer • Problem Solver</p>
-  <div class="scroll-btn">
-  ↓ SCROLL DOWN
-</div>
-</div>
-<div class="terminal reveal">
-  <div class="terminal-box">
-    
-    <div class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-    </div>
+        <pre id="typing"></pre>
+      </div>
+    </section>
 
-    <pre id="typing"></pre>
+    <section id="skills" class="reveal">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card"><i class="ri-html5-fill"></i> HTML</div>
+        <div class="skill-card"><i class="ri-css3-fill"></i> CSS</div>
+        <div class="skill-card"><i class="ri-javascript-fill"></i> JavaScript</div>
+        <div class="skill-card"><i class="ri-reactjs-fill"></i> React</div>
+        <div class="skill-card"><i class="ri-nodejs-line"></i> Node.js</div>
+        <div class="skill-card"><i class="ri-code-s-slash-fill"></i> Python</div>
+        <div class="skill-card"><i class="ri-github-line"></i> Git</div>
+      </div>
+    </section>
 
-  </div>
-</div>
-<section id="skills" class="reveal">
-    <h2>My Skills</h2>
-  <div class="skills-container">
-    <div class="skill-card"><i class="ri-html5-fill"></i>HTML</div>
-    <div class="skill-card"><i class="ri-css3-fill"></i>CSS</div>
-    <div class="skill-card"><i class="ri-javascript-fill"></i>JavaScript</div>
-    <div class="skill-card"><i class="ri-reactjs-fill"></i>React</div>
-    <div class="skill-card"><i class="ri-nodejs-line"></i>Node.js</div>
-    <div class="skill-card"><i class="fab fa-python"></i>Python</div>
-    <div class="skill-card"><i class="ri-github-line"></i>Git</div>
-    
-  </div>
-</section>
-<section id="projects" class="reveal">
-  <h2>My Projects</h2>
+    <section id="projects" class="reveal">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Personal website built with HTML, CSS and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
 
-  <div class="projects-container">
-    
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Personal website built with HTML, CSS, JS.</p>
-      <a href="#">View Project</a>
-    </div>
+        <div class="project-card">
+          <h3>CoreRex Discord Bot</h3>
+          <p>Discord automation bot with alerts, moderation and utility systems.</p>
+          <a href="#">View Project</a>
+        </div>
 
-    <div class="project-card">
-      <h3>Discord Bot</h3>
-      <p>Bot that sends live stream alerts.</p>
-      <a href="#">View Project</a>
-    </div>
+        <div class="project-card">
+          <h3>CoreRex Shipment Heist</h3>
+          <p>FiveM robbery script with hacking, guards, police alerts and rewards.</p>
+          <a href="#">Coming Soon</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>News Platform</h3>
-      <p>Dynamic news platform with high performance.</p>
-      <a href="#">View Project</a>
-    </div>
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xnjorgya" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-  </div>
-</section>
-<section id="contact">
-    <h2>Contact Me</h2>
-     <form action="https://formspree.io/f/xnjorgya" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-<section id="social">
-  <a href="https://github.com/ArpitSinghBrar2004" target="_blank" rel="noopener noreferrer">
-    <i class="ri-github-fill"></i>
-    GitHub
-  </a>
+    <section id="social">
+      <a href="https://github.com/ArpitSinghBrar2004" target="_blank" rel="noopener noreferrer">
+        <i class="ri-github-fill"></i> GitHub
+      </a>
 
-  <a href="https://www.linkedin.com/in/arpit-singh-brar-0b67332bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
-    <i class="ri-linkedin-box-fill"></i>
-    LinkedIn
-  </a>
+      <a href="https://www.linkedin.com/in/arpit-singh-brar-0b67332bb" target="_blank" rel="noopener noreferrer">
+        <i class="ri-linkedin-box-fill"></i> LinkedIn
+      </a>
 
-  <a href="resume.pdf" download>
-    <i class="ri-download-fill"></i>
-    Download Resume
-  </a>
-</section>
-<script src="script.js"></script>
+      <a href="resume.pdf" download>
+        <i class="ri-download-fill"></i> Download Resume
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Arpit Singh • CoreRex
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-<footer>
-  © 2026 Arpit Singh • CoreRex
-</footer>
 </html>
