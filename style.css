@@ -163,6 +163,7 @@ body::before {
   margin: 100px auto;
 
   background: rgba(13, 31, 28, 0.6);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
 
   border-radius: 12px;
@@ -250,6 +251,7 @@ body::before {
   padding: 20px;
 
   background: rgba(255, 255, 255, 0.05);
+   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
   border: 1px solid rgba(255,255,255,0.1);
@@ -288,6 +290,7 @@ body::before {
 
 .project-card {
   background: rgba(255, 255, 255, 0.05);
+   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 
   border: 1px solid rgba(255,255,255,0.1);
@@ -397,9 +400,9 @@ html {
   box-shadow: 0 10px 25px rgba(255,255,255,0.2);
 }
 .scroll-btn {
-  animation: bounce 1.5s infinite;
-  position: relative;
-  top:125px;
+    animation: bounce 1.5s infinite;
+    position: relative;
+    top: 0;
 }
 
 @keyframes bounce {
@@ -456,4 +459,63 @@ html {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  #nav {
+    height: 60px;
+    padding: 0 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .left,
+  .center,
+  .right {
+    position: static;
+    transform: none;
+    margin: 0;
+  }
+
+  .right span {
+    display: none;
+  }
+
+  #nav button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+
+  .hero {
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .scroll-btn {
+    margin: 45px auto 0;
+    top: 0;
+    font-size: 13px;
+    padding: 12px 28px;
+  }
+
+  .terminal {
+    width: 92%;
+    margin: 90px auto 60px;
+  }
+
+  #typing {
+    font-size: 12px;
+    padding: 18px;
+  }
 }
