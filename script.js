@@ -14,7 +14,6 @@ const text = `function moreAboutMe() {
   const data = {};
 
   data["Age"] = 22
-  data["Phone"] = "7206098885"
   data["Email"] = "arpitsinghbrar853@gmail.com"
   data["GitHub"] = "ArpitSinghBrar2004"
 
