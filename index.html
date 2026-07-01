@@ -1,191 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpit Singh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adhishrhaan Foundation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Modern Terminal-Style Loading Screen -->
-  <div id="loader">
-    <div class="loader-content">
-      <div class="loader-terminal">
-        <span class="loader-command">arpit@system:~$ boot --stack --all</span>
-        <div class="loader-bar-container">
-          <div class="loader-bar"></div>
-        </div>
-        <span class="loader-status">Initializing CoreRex Assets...</span>
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-text">Adhishrhaan</span>
       </div>
-    </div>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="active">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">THE SHRIHAAN SAHYOG GRANT</a>
+        <a href="#">INITIATIVES</a>
+        <a href="#">OUR IMPACT</a>
+        <div class="dropdown">
+          <a href="#">EVENTS <i class="ri-arrow-down-s-line"></i></a>
+        </div>
+        <a href="#">NEWS & MEDIA</a>
+        <div class="dropdown">
+          <a href="#">GET INVOLVED <i class="ri-arrow-down-s-line"></i></a>
+        </div>
+      </div>
+      
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
   </div>
 
-  <nav id="nav">
-    <a href="#main" class="nav-brand"><i class="ri-terminal-box-fill"></i> Arpit.dev</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Work</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </div>
-  </nav>
-
-  <main id="main">
-    
-    <section class="hero">
+  <header class="hero-section" id="heroSlider">
+    <div class="hero-overlay">
       <div class="hero-content">
-        <p class="hero-intro">Systems & Automation Architect</p>
-        <h1>Hi, I am <span>Arpit Singh Brar</span></h1>
-        <p class="subtitle">Building CoreRex • Custom Automation Tools • FiveM Scripts • AI Assistants</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View My Work</a>
-          <a href="#about" class="btn secondary">Learn More <i class="ri-arrow-down-line"></i></a>
+        <h1 class="hero-title">
+          Empowering Those Who <br>
+          <span class="highlight">Empower Others:</span> <br>
+          Investing in Grassroots, <br>
+          Investing in India's <br>
+          Future.
+        </h1>
+        <p class="hero-description">At Adhishrhaan Foundation, we believe true transformation begins at the roots. We act as the essential support system for the unsung heroes of community development: small grassroots NGOs, sustaining their vital work with unwavering focus and commitment.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-outline">Join Us</a>
+          <a href="#" class="btn-outline">Volunteer</a>
+          <a href="#" class="btn-solid">Donate</a>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section id="about" class="reveal">
-      <div class="section-header">
-        <span class="step-num">01 //</span>
-        <h2>About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <p>
-            I'm Arpit Singh, a self-taught developer focused on engineering reliable backend systems, 
-            intelligent automation workflows, context-aware AI assistants, and high-performance multiplayer game scripting.
-          </p>
-          <p style="margin-top: 15px;">
-            Currently building <strong>CoreRex</strong> — a modular ecosystem delivering optimized Discord mechanics, custom FiveM framework updates, and digital infrastructure integrations.
-          </p>
+  <section class="mission-banner scroll-animate fade-up">
+    <div class="container">
+      <div class="mission-content">
+        <div class="mission-text">
+          <p class="tagline">Empowering Those Who Empower Others: Investing in Grassroots Leadership for India's Future</p>
+          <p class="sub-tagline">At Adhishrhaan Foundation, we believe true transformation begins at the roots. We act as the essential support system for the unsung heroes of community development: small grassroots NGOs, sustaining their vital work with unwavering focus and commitment.</p>
+        </div>
+        <div class="mission-links">
+          <a href="#">DISCOVER OUR IMPACT <i class="ri-arrow-right-line"></i></a>
+          <span>|</span>
+          <a href="#">SUPPORT OUR MISSION <i class="ri-arrow-right-line"></i></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="terminal-section reveal">
-      <div class="terminal">
-        <div class="terminal-header">
-          <div class="dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+  <main class="main-content">
+    <section class="what-we-do-section scroll-animate fade-up">
+      <div class="section-title-block">
+        <h2>WHAT WE DO</h2>
+        <p class="section-subtitle">OUR PILLARS OF SUPPORT</p>
+      </div>
+
+      <div class="pillars-container">
+        <div class="pillar-row scroll-animate fade-left">
+          <div class="pillar-label">CAPACITY BUILDING</div>
+          <div class="pillar-desc">
+            <p>We provide systemic training, structural tools, and individual technical support to enhance operational efficiency and build impactful localized institutions. Our customized programs help institutions optimize internal processes, train their teams, and strengthen their internal structures so they can best serve their communities for long periods.</p>
+            <p class="pillar-subtext">Capacity Building providing the necessary knowledge helps small grassroots institutions to create tasks that end up sustainable, impactful, and performance-driven.</p>
           </div>
-          <span class="terminal-title">arpit@system:~</span>
-        </div>
-        <pre id="typing"></pre>
-      </div>
-    </section>
-
-    <section class="core-panel reveal">
-      <div class="panel-left">
-        <p class="panel-tag">COREX ARCHITECTURE SYSTEM</p>
-        <h2>Interconnecting automation, production AI, and specialized game architectures.</h2>
-        <p>
-          I design robust Discord engines, custom web-layer panels, and event-driven FiveM scripts with a hard requirement for clean, scalable execution.
-        </p>
-      </div>
-      <div class="panel-right">
-        <div class="status-row active">
-          <span class="status-name">CoreRex Bot</span>
-          <span class="status-badge">Active</span>
-        </div>
-        <div class="status-row pending">
-          <span class="status-name">SAM Lite</span>
-          <span class="status-badge">In Progress</span>
-        </div>
-        <div class="status-row planned">
-          <span class="status-name">FiveM HUD</span>
-          <span class="status-badge">Planned</span>
-        </div>
-        <div class="status-row planned">
-          <span class="status-name">Shipment Heist</span>
-          <span class="status-badge">Planned</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="reveal">
-      <div class="section-header">
-        <span class="step-num">02 //</span>
-        <h2>Technical Stack</h2>
-      </div>
-      <div class="skills-container">
-        <div class="skill-card"><i class="ri-javascript-fill"></i> JavaScript</div>
-        <div class="skill-card"><i class="ri-code-s-slash-fill"></i> Python</div>
-        <div class="skill-card"><i class="ri-terminal-line"></i> Lua</div>
-        <div class="skill-card"><i class="ri-reactjs-fill"></i> React</div>
-        <div class="skill-card"><i class="ri-nodejs-line"></i> Node.js</div>
-        <div class="skill-card"><i class="ri-terminal-window-fill"></i> C++</div>
-        <div class="skill-card"><i class="ri-html5-fill"></i> HTML5</div>
-        <div class="skill-card"><i class="ri-css3-fill"></i> CSS3</div>
-        <div class="skill-card"><i class="ri-github-line"></i> Git Engine</div>
-      </div>
-    </section>
-
-    <section id="projects" class="reveal">
-      <div class="section-header">
-        <span class="step-num">03 //</span>
-        <h2>Featured Deployments</h2>
-      </div>
-      <div class="projects-container">
-        <div class="project-card">
-          <div class="project-icon"><i class="ri-computer-line"></i></div>
-          <h3>Portfolio Website</h3>
-          <p>Personal developer portal configured natively using asynchronous interface handling and zero external layout weight.</p>
-          <a href="#" class="project-link">Launch Project <i class="ri-arrow-right-up-line"></i></a>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon"><i class="ri-robot-line"></i></div>
-          <h3>CoreRex Discord Bot</h3>
-          <p>A multi-tenant automation bot deployed with proactive monitoring alert protocols, state filters, and automated moderation pipelines.</p>
-          <a href="#" class="project-link">Launch Project <i class="ri-arrow-right-up-line"></i></a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon"><i class="ri-gamepad-line"></i></div>
-          <h3>Pokemon Trading Engine</h3>
-          <p>An interactive, state-synced card platform built for low latency online trading, collecting, and live card engine battling.</p>
-          <a href="https://pokemon-cards-trading.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link">Launch Project <i class="ri-arrow-right-up-line"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="reveal">
-      <div class="section-header">
-        <span class="step-num">04 //</span>
-        <h2>Establish Contact</h2>
-      </div>
-      <div class="contact-wrapper">
-        <form action="https://formspree.io/f/xnjorgya" method="POST" class="modern-form">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+        <div class="pillar-row scroll-animate fade-right">
+          <div class="pillar-label">VISIBILITY</div>
+          <div class="pillar-desc">
+            <p>We are dedicated to amplifying the impactful stories of grassroots organizations, helping them effectively communicate their development, document their successes, and gain the recognition they truly deserve through strategic content production and media outreach. This includes developing compelling narratives, creating visual assets, and connecting them with a broader audience.</p>
+            <p class="pillar-subtext">Vibrant visibility actions direct a spotlight on the tierless efforts of those whose work is otherwise packaged into unrecognised sectors. Positive visibility supports sustenance.</p>
           </div>
-          <textarea name="message" placeholder="Message details..." required></textarea>
-          <button type="submit" class="form-btn">Transmit Message <i class="ri-send-plane-fill"></i></button>
-        </form>
+        </div>
+
+        <div class="pillar-row scroll-animate fade-left">
+          <div class="pillar-label">NETWORKING</div>
+          <div class="pillar-desc">
+            <p>We create collaborative platforms with small working nodes on mutual issues and support networks. It link them together on shared ground frameworks with established corporate entities, academic institutions, and government bodies. This dynamic integration brings relevant capital and systemic dependency models to safely launch long-term community projects.</p>
+            <p class="pillar-subtext">Creative Networking bridges individual setups into robust platforms, helping networks grow stronger, access a cloud pool for better performance.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="social">
-      <a href="https://github.com/ArpitSinghBrar2004" target="_blank" rel="noopener noreferrer">
-        <i class="ri-github-fill"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/arpit-singh-brar-0b67332bb" target="_blank" rel="noopener noreferrer">
-        <i class="ri-linkedin-box-fill"></i> LinkedIn
-      </a>
-      <a href="resume.pdf" download class="resume-download">
-        <i class="ri-download-cloud-line"></i> Fetch Resume
-      </a>
+    <hr class="section-divider scroll-animate zoom-in">
+
+    <section class="focus-areas-section scroll-animate fade-up">
+      <div class="section-title-block">
+        <h2>OUR FOCUS AREAS</h2>
+        <p class="section-subtitle">TOUCHING LIVES WITH COMPASSION</p>
+      </div>
+
+      <div class="focus-grid">
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.1s;">
+          <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80" alt="Child Care">
+          <div class="card-overlay"><span>Child Care & Protection</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=400&q=80" alt="Education">
+          <div class="card-overlay"><span>Grassroots Education</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.3s;">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=80" alt="Women Empowerment">
+          <div class="card-overlay"><span>Women Empowerment</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.4s;">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400&q=80" alt="Healthcare">
+          <div class="card-overlay"><span>Healthcare Initiatives</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.5s;">
+          <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1df0?auto=format&fit=crop&w=400&q=80" alt="Animal Welfare">
+          <div class="card-overlay"><span>Animal Welfare</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.6s;">
+          <img src="https://images.unsplash.com/photo-1536882240095-0379873feb4e?auto=format&fit=crop&w=400&q=80" alt="Elderly Care">
+          <div class="card-overlay"><span>Elderly Care Support</span></div>
+        </div>
+        <div class="focus-card scroll-animate zoom-in" style="animation-delay: 0.7s;">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=400&q=80" alt="Environment">
+          <div class="card-overlay"><span>Environment Care</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grant-section scroll-animate fade-up">
+      <div class="grant-container">
+        <div class="grant-content scroll-animate fade-left">
+          <h3>The Shrihaan Sahyog Grant</h3>
+          <p>We provide long-term visual, infrastructural, and financial core support to selected small-scale implementations that work inside specific neglected target blocks.</p>
+          <p>This localized grant processes funds directly to dynamic, community-driven modules that are operating without immediate backing, or which suffer from acute resource shortages but demonstrate structured social responsibility execution metrics.</p>
+          <button class="btn-grant">Know More</button>
+        </div>
+        <div class="grant-images" id="grantSlider">
+          <div class="grant-img-wrapper">
+            <img id="grantImage1" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=500&q=80" alt="Grant Image 1">
+          </div>
+          <div class="grant-img-wrapper">
+            <img id="grantImage2" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=300&q=80" alt="Grant Image 2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section scroll-animate fade-up">
+      <div class="events-container">
+        <div class="section-title-block">
+          <h2>Our Events</h2>
+          <p class="section-subtitle">What's Next & What's Been</p>
+        </div>
+
+        <div class="events-tabs">
+          <button class="tab-btn active" onclick="showTab('past')">Past Events</button>
+          <button class="tab-btn" onclick="showTab('upcoming')">Upcoming Events</button>
+        </div>
+
+        <div class="events-content">
+          <div class="event-card past-events active">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Anemia Screening Camp">
+            </div>
+            <div class="event-details">
+              <span class="event-category">Woman and Child Welfare</span>
+              <h3>Anemia Screening Camp</h3>
+              <div class="event-meta">
+                <span><i class="ri-calendar-line"></i> 05-09-2025</span>
+                <span><i class="ri-map-pin-line"></i> Chandigarh</span>
+                <span><i class="ri-building-line"></i> DON BOSCO KAULI</span>
+              </div>
+              <p>Anemia remains a significant public health concern in India, particularly among women and children. According to the latest National Family Health Survey (NFHS-5), approximately 53% of children under...</p>
+              <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="event-card upcoming-events">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Upcoming Event">
+            </div>
+            <div class="event-details">
+              <span class="event-category">Education</span>
+              <h3>Stationery Distribution Drive</h3>
+              <div class="event-meta">
+                <span><i class="ri-calendar-line"></i> 15-10-2025</span>
+                <span><i class="ri-map-pin-line"></i> Mohali, Chandigarh</span>
+              </div>
+              <p>Join us in our mission to support underprivileged children with essential stationery items. Help us make a difference in their education journey.</p>
+              <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Arpit Singh &bull; CoreRex Systems. All Rights Reserved.</p>
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Adhishrhaan</h3>
+          <div class="footer-contact">
+            <p><i class="ri-mail-line"></i> info@adhishrhaan.com</p>
+            <p><i class="ri-phone-line"></i> +970 66 00 00 7</p>
+          </div>
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-twitter-x-fill"></i></a>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-cta">
+          <h4>Changing Lives, Building Futures.</h4>
+          <a href="#" class="btn-donate-footer">DONATE NOW</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-links">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Initiatives</a>
+          <a href="#">Our Impact</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <p class="footer-copy">© 2025 Adhishrhaan | All rights reserved | Designed by Akki Studios</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
